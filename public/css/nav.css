@@ -1,0 +1,30 @@
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav span {
+    padding: 6px 16px;
+    background-color: white;
+    color: purple;
+    text-decoration: none;
+    border: 1px solid #916eff;
+}
+
+.nav span:hover {
+    background-color: #916eff;
+    color: white;
+}
+
+.nav span a {
+    transition: 0.3s ease-out;
+    color: #916eff;
+    text-decoration: none;
+    padding: 6px 16px;
+}
+
+.nav span a:hover {
+    color: white;
+}

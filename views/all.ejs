@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All data</title>
+    <link rel="stylesheet" href="/css/all.css">
+</head>
+
+<body>
+
+
+    <h2>Showing data of all pets</h2>
+ 
+    <%- include('./common/nav') %>
+
+    <div class="main">
+        <div class="main-inner">
+            <table>
+                <tr>
+                    <th>Serial No.</th>
+                    <th>Name</th>
+                    <th>Species</th>
+                    <th>Age</th>
+                </tr>
+
+
+                <% for(let i=0; i<result.length; i++){%>
+                    <tr>
+                        <td>
+                            <%=i+1%>
+                        </td>
+                        <td>
+                            <%=result[i].name%>
+                        </td>
+                        <td>
+                            <%=result[i].species%>
+                        </td>
+                        <td>
+                            <%=result[i].age%>
+                        </td>
+                    </tr>
+                    <%}%>
+
+
+            </table>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

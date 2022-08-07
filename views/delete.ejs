@@ -4,20 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Form</title>
+  <title>Delete Record</title>
 
   <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-  <br><br>
+  <br>
   <%- include('./common/nav') %>
   <div class="form-main">
     <div class="form-main-inner">
-      <h2>PET Registration Form</h2>
- 
+      <h2>Delete Individual Record</h2>
+     
 
-      <form id="myForm" action="/form" method="post">
+      <form id="myForm" action="/deleteOne" method="post">
         <input type="text" placeholder="Animal name..." name="name" id="name" required>
         <input type="text" placeholder="Species" name="species" id="species" required>
         <input type="number" placeholder="Age" name="age" id="age" required>
@@ -25,7 +25,7 @@
         <!-- <textarea placeholder="Your message"></textarea> -->
 
         <div class="button">
-          <input type="submit" class="submit">
+          <input type="submit" value="Delete" class="submit">
           <input type="reset" class="reset">
         </div>
 
